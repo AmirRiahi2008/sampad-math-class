@@ -1,0 +1,25 @@
+@import url("./app.css");
+*{
+    font-family: yekan ;
+    color: white;
+    
+}
+input{
+    color: white;
+}
+body{
+    direction: rtl;
+}
+input[type="checkbox"] {
+    border-radius: 13px;
+    box-shadow: 1px 1px 23px #e5e5e5;
+}
+
+.card_number{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_owner{
+    text-align: center;
+}

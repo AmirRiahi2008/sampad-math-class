@@ -48,4 +48,13 @@ class UserController extends Controller
 
         return response()->json(['id' => $user->id, 'payment' => $payment], 201);
     }
+    public function index(Request $request)
+    {
+        $users= User::all();
+        if($request->is("api/*"))
+        {
+            return response()->json(["users" => $users]);
+        }
+        
+    }
 }
